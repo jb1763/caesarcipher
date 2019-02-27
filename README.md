@@ -1,4 +1,4 @@
-# caesarcipher
+# Caesar Cipher
 Caesar Cipher code for Hello World Kickoff
 How the Code Works
 The encryption and decryption processes are the reverse of the other, and even then they still share much of the same code. Let’s look at how each line works.
