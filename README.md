@@ -1,6 +1,6 @@
 # Caesar Cipher
 Caesar Cipher code for Hello World Kickoff
-How the Code Works
+# How the Code Works
 The encryption and decryption processes are the reverse of the other, and even then they still share much of the same code. Let’s look at how each line works.
 
  1. &#35; Caesar Cipher
@@ -10,7 +10,7 @@ The encryption and decryption processes are the reverse of the other, and even t
 
 The first line is just a comment. MAX_KEY_SIZE is a constant that stores the integer 26 in it. MAX_KEY_SIZE reminds us that in this program, the key used in the cipher should be between 1 and 26.
 
-##Deciding to Encrypt or Decrypt
+## Deciding to Encrypt or Decrypt
 
  5. def getMode():
 
@@ -34,7 +34,7 @@ This list is ['encrypt', 'e', 'decrypt', 'd'], but it is easier for the programm
 
 This function will return the first character in mode as long as mode is equal to 'encrypt', 'e', 'decrypt', or 'd'. Therefore, getMode() will return the string 'e' or the string 'd' (but the user can type in either “e”, “encrypt”, “d”, or “decrypt”.)
 
-##Getting the Message from the Player
+## Getting the Message from the Player
 
 14. def getMessage():
 
@@ -44,7 +44,7 @@ This function will return the first character in mode as long as mode is equal t
 
 The getMessage() function simply gets the message to encrypt or decrypt from the user and returns it.
 
-##Getting the Key from the Player
+## Getting the Key from the Player
 
 18. def getKey():
 
@@ -64,7 +64,7 @@ The getKey() function lets the player type in the key they will use to encrypt o
 
 A valid key here is one that is between the integer values 1 and 26 (remember that MAX_KEY_SIZE will only ever have the value 26 because it is constant). It then returns this key. Line 22 sets key to the integer version of what the user typed in, so getKey() returns an integer.
 
-##Encrypt or Decrypt the Message with the Given Key
+## Encrypt or Decrypt the Message with the Given Key
 
 26. def getTranslatedMessage(mode, message, key):
 
@@ -170,7 +170,7 @@ False
 
 False
 
-##Encrypting or Decrypting Each Letter
+## Encrypting or Decrypting Each Letter
 
 36.             if symbol.isupper():
 
@@ -228,7 +228,7 @@ The last line in the getTranslatedMessage() function returns the translated stri
 
 The start of the program calls each of the three functions defined previously to get the mode, message, and key from the user. These three values are passed to getTranslatedMessage() whose return value (the translated string) is printed to the user.
 
-##Brute Force
+## Brute Force
 That’s the entire Caesar Cipher. However, while this cipher may fool some people who don’t understand cryptography, it won’t keep a message secret from someone who knows cryptanalysis. While cryptography is the science of making codes, cryptanalysis is the science of breaking codes.
 
 Do you wish to encrypt or decrypt a message?
@@ -253,7 +253,7 @@ Lwcjba uig vwb jm xtmiaivb, jcb kmzbiqvbg qa ijaczl.
 
 Brute force is the technique of trying every possible key until you find the correct one. Because there are only 26 possible keys, it would be easy for a cryptanalyst to write a hacking program than decrypts with every possible key. Then they could look for the key that decrypts to plain English. Let’s add a brute force feature to the program.
 
-##Adding the Brute Force Mode
+## Adding the Brute Force Mode
 
 First, change lines 7, 9, and 12 (which are in the getMode() function) to look like the following (the changes are in bold):
 
@@ -371,7 +371,7 @@ After looking over each row, you can see that the 8th message isn’t garbage, b
 
  
 
-##Summary
+## Summary
 
 Computers are good at doing mathematics. When we create a system to translate some piece of information into numbers (such as we do with text and ordinals or with space and coordinate systems), computer programs can process these numbers quickly and efficiently.
 
